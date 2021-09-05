@@ -309,7 +309,7 @@ bar {
 assign [class="Alacritty"] → $ws1
 assign [class="Firefox" instance="Navigator"] → $ws2
 assign [class="Microsoft Teams - Preview"] → $ws3
-# assign [class="Rhythmbox"] → $ws4
+assign [class="Rhythmbox"] → $ws4
 
 #custom app commands (?i) just means case insenitive..
 for_window [class="(?i)feh"] floating enable
