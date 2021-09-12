@@ -326,7 +326,7 @@ for_window [class="xdman-Main"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Nitrogen"] floating enable
 for_window [class="mpv"] floating enable
-
+for_window [class="Eog"] floating enable
 
 #tap to touch
 exec xinput set-prop 11 290 1

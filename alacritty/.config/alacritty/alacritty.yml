@@ -1,6 +1,5 @@
 # # Colors (Gruvbox dark)
-# colors:
-#   primary:
+# colors: primary:
 #     # hard contrast background - '#1d2021'
 #     background:        &gruvbox_dark_bg '#000000'
 #     # soft contrast background - '#32302f'
@@ -176,7 +175,7 @@ colors:
     cyan:    '#89b8c2'
     white:   '#abb0c9'
 
-background_opacity: 0.85
+background_opacity: 0.9
 
   # Change cursor colors
 cursor:
@@ -201,7 +200,7 @@ font:
     family: "FiraCode"
     style: Bold Italic
   # Point size
-  size: 10.0
+  size: 11.0
 
   ligatures: true
 
