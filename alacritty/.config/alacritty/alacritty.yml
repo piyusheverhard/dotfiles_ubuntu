@@ -175,7 +175,7 @@ colors:
     cyan:    '#89b8c2'
     white:   '#abb0c9'
 
-background_opacity: 0.9
+background_opacity: 0.9 
 
   # Change cursor colors
 cursor:
@@ -200,7 +200,7 @@ font:
     family: "FiraCode"
     style: Bold Italic
   # Point size
-  size: 11.0
+  size: 10
 
   ligatures: true
 
