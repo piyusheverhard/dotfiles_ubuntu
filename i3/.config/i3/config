@@ -307,7 +307,7 @@ bar {
 # app to open in specific workspaces
 
 assign [class="Alacritty"] → $ws1
-assign [class="Firefox" instance="Navigator"] → $ws2
+assign [class="Brave-browser"] → $ws2
 assign [class="Microsoft Teams - Preview"] → $ws3
 assign [class="Rhythmbox"] → $ws4
 
@@ -336,7 +336,7 @@ bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness screen brightness controls
 
 #set wallpaper
-exec feh --bg-scale ~/wallpapers/JMDM5fS.jpeg
+exec feh --bg-scale ~/wallpapers/sundown-landscape-minimalist-c6-2560x1440.jpg
 
 
 #Autostart applications
@@ -345,7 +345,9 @@ exec --no-startup-id flameshot
 
 # i3lock
 set $i3lockwall sh ~/.config/i3/scripts/lock.sh
+set $buckle sh ~/.config/i3/scripts/buckle.sh
 bindsym $mod+shift+x exec --no-startup-id $i3lockwall
+bindsym $mod+ctrl+b exec --no-startup-id $buckle
 
 # night mode : redshift
 # use redshift-gtk instead of redshift
