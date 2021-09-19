@@ -40,5 +40,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'preservim/nerdtree'
 
+    " cpbooster
+    Plug 'searleser97/cpbooster.vim'
+
 Plug 'sheerun/vim-polyglot'
     call plug#end()
