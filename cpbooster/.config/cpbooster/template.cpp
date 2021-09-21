@@ -35,9 +35,63 @@ typedef vector<vector<int>> vvi;
 #define MOD 1000000007
 #define INF 1000000000000000000LL
 
+#ifdef DEBUG
+#define deb(x)                                                                 \
+  cerr << #x << ": ";                                                          \
+  _print(x) << cerr << nline
+#else
+#define deb(x) 69
+#endif
+
+void _print(int x) { cerr << x; }
+void _print(char x) { cerr << x; }
+void _print(string x) { cerr << x; }
+void _print(double x) { cerr << x; }
+void _print(long double x) { cerr << x; }
+template <typename T, typename V> void _print(pair<T, V> p) {
+  cerr << "{";
+  _print(p.ff);
+  cerr << ", ";
+  _print(p.ss);
+  cerr << "}";
+}
+template <typename T> void _print(vector<T> v) {
+  cerr << '{';
+  for (T i : v) {
+    _print(i);
+    cerr << ' ';
+  }
+  cerr << '}';
+}
+template <typename T> void _print(set<T> s) {
+  cerr << '{';
+  for (T i : s) {
+    _print(i);
+    cerr << ' ';
+  }
+  cerr << '}';
+}
+template <typename T> void _print(multiset<T> m) {
+  cerr << '{';
+  for (T i : m) {
+    _print(i);
+    cerr << ' ';
+  }
+  cerr << '}';
+}
+template <typename T, typename V> void _print(map<T, V> m) {
+  cerr << '{';
+  for (T i : m) {
+    _print(i);
+    cerr << ' ';
+  }
+  cerr << '}';
+}
+
 /*---------------------------------------------------------------------*/
 
 void SHIT_HERE_WE_GO_AGAIN() {
+
 
 
 
