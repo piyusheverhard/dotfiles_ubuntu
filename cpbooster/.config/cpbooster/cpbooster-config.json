@@ -2,7 +2,7 @@
   "contestsDirectory": "/home/piyush/Contests",
   "port": 1327,
   "editor": "alacritty",
-  "closeAfterClone": false,
+  "closeAfterClone": true,
   "showStatusPageOnSubmit": true,
   "useUserDefaultBrowser": true,
   "preferredLang": "cpp",
@@ -10,7 +10,7 @@
     "cpp": {
       "template": "~/dotfiles/cpbooster/.config/cpbooster/template.cpp",
       "command": "g++ -std=gnu++17 -O2",
-      "debugCommand": "g++ -std=gnu++17 -DDEBUG -Wshadow -Wall",
+      "debugCommand": "g++ -std=gnu++17 -DJAI_MATA_DI -Wshadow -Wall",
       "aliases": {
         "codeforces": "54",
         "atcoder": "4003",

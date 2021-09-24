@@ -35,7 +35,7 @@ typedef vector<vector<int>> vvi;
 #define MOD 1000000007
 #define INF 1000000000000000000LL
 
-#ifdef DEBUG
+#ifdef JAI_MATA_DI
 #define deb(x)                                                                 \
   cerr << #x << ": ";                                                          \
   _print(x) << cerr << nline
@@ -48,6 +48,11 @@ void _print(char x) { cerr << x; }
 void _print(string x) { cerr << x; }
 void _print(double x) { cerr << x; }
 void _print(long double x) { cerr << x; }
+template <typename T, typename V> void _print(pair<T, V> p);
+template <typename T> void _print(vector<T> v);
+template <typename T> void _print(multiset<T> m);
+template <typename T> void _print(set<T> s);
+template <typename T, typename V> void _print(map<T, V> m);
 template <typename T, typename V> void _print(pair<T, V> p) {
   cerr << "{";
   _print(p.ff);
@@ -91,7 +96,6 @@ template <typename T, typename V> void _print(map<T, V> m) {
 /*---------------------------------------------------------------------*/
 
 void SHIT_HERE_WE_GO_AGAIN() {
-
 
 
 
