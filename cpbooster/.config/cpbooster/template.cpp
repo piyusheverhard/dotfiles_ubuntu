@@ -38,7 +38,8 @@ typedef vector<vector<int>> vvi;
 #ifdef JAI_MATA_DI
 #define deb(x)                                                                 \
   cerr << #x << ": ";                                                          \
-  _print(x) << cerr << nline
+  _print(x); 
+  cerr << nline
 #else
 #define deb(x) 69
 #endif
@@ -61,36 +62,36 @@ template <typename T, typename V> void _print(pair<T, V> p) {
   cerr << "}";
 }
 template <typename T> void _print(vector<T> v) {
-  cerr << '{';
+  cerr << '[';
   for (T i : v) {
     _print(i);
     cerr << ' ';
   }
-  cerr << '}';
+  cerr << ']';
 }
 template <typename T> void _print(set<T> s) {
-  cerr << '{';
+  cerr << '[';
   for (T i : s) {
     _print(i);
     cerr << ' ';
   }
-  cerr << '}';
+  cerr << ']';
 }
 template <typename T> void _print(multiset<T> m) {
-  cerr << '{';
+  cerr << '[';
   for (T i : m) {
     _print(i);
     cerr << ' ';
   }
-  cerr << '}';
+  cerr << ']';
 }
 template <typename T, typename V> void _print(map<T, V> m) {
-  cerr << '{';
-  for (T i : m) {
+  cerr << '[';
+  for (auto i : m) {
     _print(i);
     cerr << ' ';
   }
-  cerr << '}';
+  cerr << ']';
 }
 
 /*---------------------------------------------------------------------*/
