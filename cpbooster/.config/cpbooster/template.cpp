@@ -35,11 +35,8 @@ typedef vector<vector<int>> vvi;
 #define MOD 1000000007
 #define INF 1000000000000000000LL
 
-#ifdef JAI_MATA_DI
-#define deb(x)                                                                 \
-  cerr << #x << ": ";                                                          \
-  _print(x); 
-  cerr << nline
+#ifdef _genjutsu
+#define deb(x) cerr << #x << ": ", _print(x), cerr << nline
 #else
 #define deb(x) 69
 #endif
@@ -97,6 +94,7 @@ template <typename T, typename V> void _print(map<T, V> m) {
 /*---------------------------------------------------------------------*/
 
 void SHIT_HERE_WE_GO_AGAIN() {
+
 
 
 
