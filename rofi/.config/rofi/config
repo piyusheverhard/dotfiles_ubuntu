@@ -2,4 +2,4 @@ rofi.theme: android_notification
 rofi.terminal: gnome-terminal
 rofi.ssh-client: ssh
 rofi.ssh-command: {terminal} -- {ssh-client} {host}
-rofi.theme: /home/piyush/.config/rofi/themes/matcha-dark-sea.rasi
+rofi.theme: /home/piyush/.config/rofi/themes/iceberg-dark.rasi
