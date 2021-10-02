@@ -4,6 +4,9 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+/* #include <ext/pb_ds/assoc_container.hpp> */
+/* #include <ext/pb_ds/tree_policy.hpp> */
+/* using namespace __gnu_pbds; */
 
 #define int long long
 #define nline "\n"
@@ -30,6 +33,12 @@ typedef set<pii> spii;
 typedef vector<pii> vpii;
 typedef vector<int> vi;
 typedef vector<vector<int>> vvi;
+/* typedef tree<pii, null_type, less<pii>, rb_tree_tag, */
+/*              tree_order_statistics_node_update> */
+/*     oset; // ordered_set */
+/* // member functions : */
+/* // 1. order_of_key(k) : number of elements strictly lesser than k. */
+/* // 2. find_by_order(k) : k-th element in the oset. */
 
 #define PI 3.141592653589793
 #define MOD 1000000007
