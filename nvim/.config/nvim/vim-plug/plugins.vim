@@ -39,6 +39,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'preservim/nerdtree'
+    Plug 'kyazdani42/nvim-web-devicons'
 
     " cpbooster
     Plug 'searleser97/cpbooster.vim'

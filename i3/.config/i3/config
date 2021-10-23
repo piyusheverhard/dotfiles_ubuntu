@@ -171,7 +171,7 @@ bindsym $mod+a focus parent
 #   󿢠󿢣󿢦󿢩󿢬󿢯󿢲󿢵󿢸󿢻󿢾
 #   󿢢󿢥󿢨󿢫󿢮󿢱󿢴󿢷󿢺󿢽󿣀
 set $ws1 "1: "
-set $ws2 "2: "
+set $ws2 "2: "
 set $ws3 "3: "
 set $ws4 "4: "
 set $ws5 "5"
@@ -286,7 +286,7 @@ bar {
     #     bumblebee-status -m <modules...> -p <params...> -t <theme>
 	status_command /home/piyush/.local/bin/bumblebee-status \
         -m title cpu memory disk pomodoro battery datetime bluetooth spacer\
-        -p disk.format={left} title.scroll=True spacer.text=" " \
+        -p disk.format={left} title.scroll=True spacer.text="" \
         -t iceberg-dark-powerline
 
 # }}}
@@ -338,7 +338,7 @@ bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness screen brightness controls
 
 #set wallpaper
-exec feh --bg-scale ~/wallpapers/sundown-landscape-minimalist-c6-2560x1440.jpg
+exec feh --bg-scale ~/wallpapers/aesthetic-anime-wallpaper-desktop-14.jpg
 
 
 #Autostart applications
@@ -348,7 +348,7 @@ exec --no-startup-id flameshot
 # i3lock
 set $i3lockwall sh ~/.config/i3/scripts/lock.sh
 set $buckle sh ~/.config/i3/scripts/buckle.sh
-bindsym $mod+shift+x exec --no-startup-id $i3lockwall
+bindsym $mod+shift+x exec --no-startup-id i3lock -i ~/wallpapers/1920884.png
 bindsym $mod+ctrl+b exec --no-startup-id $buckle
 
 # night mode : redshift

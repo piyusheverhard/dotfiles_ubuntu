@@ -149,7 +149,7 @@ colors:
 
     bar:
       background: '#84a0c6'
-      #foreground: '#1d1f21'
+      foreground: '#1d1f21'
 
   # Normal colors
   normal:
