@@ -1,5 +1,7 @@
+
 // created by "piyusheverhard"
-//@ moj_krdi_bete
+//@ 国立工科大学パトナ校
+
 /*---------------------------------------------------------------------*/
 
 #include <bits/stdc++.h>
@@ -7,6 +9,7 @@ using namespace std;
 /* #include <ext/pb_ds/assoc_container.hpp> */
 /* #include <ext/pb_ds/tree_policy.hpp> */
 /* using namespace __gnu_pbds; */
+
 
 #define int long long
 #define nline "\n"
@@ -43,6 +46,8 @@ typedef vector<vector<int>> vvi;
 #define PI 3.141592653589793
 #define MOD 1000000007
 #define INF 1000000000000000000LL
+
+/*----------------------------DEBUG-TEMPLATE---------------------------------------*/
 
 #ifdef _genjutsu
 #define deb(x) cerr << #x << ": ", _print(x), cerr << nline

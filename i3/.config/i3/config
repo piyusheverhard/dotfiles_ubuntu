@@ -285,7 +285,7 @@ bar {
     # format:
     #     bumblebee-status -m <modules...> -p <params...> -t <theme>
 	status_command /home/piyush/.local/bin/bumblebee-status \
-        -m title cpu memory disk pomodoro battery datetime bluetooth spacer\
+        -m title cpu memory disk pomodoro battery datetime brightness bluetooth spacer\
         -p disk.format={left} title.scroll=True spacer.text="" \
         -t iceberg-dark-powerline
 
@@ -346,9 +346,9 @@ exec --no-startup-id compton
 exec --no-startup-id flameshot
 
 # i3lock
-set $i3lockwall sh ~/.config/i3/scripts/lock.sh
+set $i3lockwall i3lock -i ~/wallpapers/1920884.png
 set $buckle sh ~/.config/i3/scripts/buckle.sh
-bindsym $mod+shift+x exec --no-startup-id i3lock -i ~/wallpapers/1920884.png
+bindsym $mod+shift+x exec --no-startup-id $i3lockwall
 bindsym $mod+ctrl+b exec --no-startup-id $buckle
 
 # night mode : redshift
