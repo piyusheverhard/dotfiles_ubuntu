@@ -10,7 +10,6 @@ using namespace std;
 /* #include <ext/pb_ds/tree_policy.hpp> */
 /* using namespace __gnu_pbds; */
 
-
 #define int long long
 #define nline "\n"
 #define mp make_pair
@@ -110,9 +109,6 @@ template <typename T, typename V> void _print(map<T, V> m) {
 void SHIT_HERE_WE_GO_AGAIN() {
 
 
-
-
-
 }
 
 int32_t main() {
@@ -127,7 +123,8 @@ int32_t main() {
 
   int t = 1;
   cin >> t;
-  while (t--) {
+  for (int i = 1; i <= t; i++) {
+    /* cout << "Case #" << i << ": "; */
     SHIT_HERE_WE_GO_AGAIN();
   }
 }

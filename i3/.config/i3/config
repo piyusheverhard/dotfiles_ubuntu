@@ -338,7 +338,7 @@ bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness screen brightness controls
 
 #set wallpaper
-exec feh --bg-scale ~/wallpapers/aesthetic-anime-wallpaper-desktop-14.jpg
+exec feh --bg-scale ~/wallpapers/geometrical-1.jpg
 
 
 #Autostart applications

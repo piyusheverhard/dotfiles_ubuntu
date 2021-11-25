@@ -29,6 +29,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " undotree
     Plug 'mbbill/undotree'
 
+    Plug 'SirVer/ultisnips'
+
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
 
