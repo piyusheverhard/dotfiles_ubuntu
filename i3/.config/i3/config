@@ -328,6 +328,7 @@ for_window [class="Gnome-calculator"] floating enable
 for_window [class="Totem"] floating enable
 for_window [class="Nitrogen"] floating enable
 for_window [class="mpv"] floating enable
+for_window [class="vlc"] floating enable
 for_window [class="Eog"] floating enable
 
 #tap to touch
