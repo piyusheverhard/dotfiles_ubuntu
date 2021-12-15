@@ -24,4 +24,5 @@ source $HOME/.config/nvim/lsp/python-lsp.lua
 source $HOME/.config/nvim/lsp/css-lsp.lua
 source $HOME/.config/nvim/lsp/html-lsp.lua
 source $HOME/.config/nvim/lsp/clangd-lsp.lua
+source $HOME/.config/nvim/lsp/null-ls.lua
 highlight Normal guibg=NONE ctermbg=NONE

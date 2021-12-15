@@ -29,10 +29,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " undotree
     Plug 'mbbill/undotree'
 
-    Plug 'SirVer/ultisnips'
 
+    
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
+    Plug 'jose-elias-alvarez/null-ls.nvim'
 
     Plug 'hrsh7th/vim-vsnip'
     Plug 'hrsh7th/vim-vsnip-integ'
@@ -42,6 +43,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'preservim/nerdtree'
     Plug 'kyazdani42/nvim-web-devicons'
+    
 
     " cpbooster
     Plug 'searleser97/cpbooster.vim'
