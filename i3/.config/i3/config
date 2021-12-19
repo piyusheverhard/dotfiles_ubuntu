@@ -48,7 +48,7 @@ client.background $bg
 title_align center
 
 # }}}
-# 
+## 
 
 ###Colors from jayywolff
 
@@ -274,22 +274,20 @@ gaps outer $default_outer_gaps
 
 bar {
 
-	# font pango:Iosevka Term Curly Medium, pango:Cica 11
-	# font pango:Sarasa Mono J, pango:Cica 11
-	position top
+ 	# font pango:Iosevka Term Curly Medium, pango:Cica 11
+ 	# font pango:Sarasa Mono J, pango:Cica 11
+ 	position top
 
-    ## i3status-rust
-    # status_command i3status-rs ~/.config/i3status-rust/config.toml
+     ## i3status-rust
+     # status_command i3status-rs ~/.config/i3status-rust/config.toml
 
-    # bumblebee-status --------------------------------------------- {{{
-    # format:
-    #     bumblebee-status -m <modules...> -p <params...> -t <theme>
-	status_command /home/piyush/.local/bin/bumblebee-status \
-        -m title cpu memory disk pomodoro battery datetime brightness bluetooth spacer\
-        -p disk.format={left} title.scroll=True spacer.text="" \
-        -t iceberg-dark-powerline
-
-# }}}
+     # bumblebee-status --------------------------------------------- {{{
+     # format:
+     #     bumblebee-status -m <modules...> -p <params...> -t <theme>
+ 	status_command /home/piyush/.local/bin/bumblebee-status \
+         -m title cpu memory disk pomodoro battery datetime brightness bluetooth spacer\
+         -p disk.format={left} title.scroll=True spacer.text="" \
+         -t iceberg-dark-powerline
 
     colors {
         # <class>          <border>   <bg>     <fg>
@@ -302,7 +300,7 @@ bar {
     }
 }
 
-# }}} 
+# # }}} 
 
 # app to open in specific workspaces
 
@@ -347,10 +345,12 @@ exec --no-startup-id compton
 exec --no-startup-id flameshot
 
 # i3lock
-set $i3lockwall i3lock -i ~/wallpapers/1920884.png
+set $i3lockwall i3lock -i ~/wallpapers/673189.png
 set $buckle sh ~/.config/i3/scripts/buckle.sh
 bindsym $mod+shift+x exec --no-startup-id $i3lockwall
 bindsym $mod+ctrl+b exec --no-startup-id $buckle
 
 # night mode : redshift
 # use redshift-gtk instead of redshift
+#
+

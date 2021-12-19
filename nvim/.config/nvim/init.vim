@@ -5,7 +5,7 @@ source $HOME/.config/nvim/general/settings.vim
 "Key mappings
 source $HOME/.config/nvim/keys/mappings.vim
 "themes
-source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/gruvbox.vim
 source $HOME/.config/nvim/themes/airline.vim
 "plugin configurations
 source $HOME/.config/nvim/plug-config/fzf.vim
