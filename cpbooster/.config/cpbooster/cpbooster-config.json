@@ -9,8 +9,8 @@
   "languages": {
     "cpp": {
       "template": "~/dotfiles/cpbooster/.config/cpbooster/template.cpp",
-      "command": "g++ -std=gnu++17 -O2",
-      "debugCommand": "g++ -std=gnu++17 -D_genjutsu -Wshadow -Wall",
+      "command": "g++ -std=gnu++2a -O2",
+      "debugCommand": "g++ -std=gnu++2a -D_genjutsu -Wshadow -Wall",
       "aliases": {
         "codeforces": "73",
         "atcoder": "4003",
