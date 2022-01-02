@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/static/v1?label=Editor&message=Neovim&color=green&style=flat-square"/> 
 </p>
 
-<div align=center><img src="screenshot.png" /></div>
+<!-- <div align=center><img src="screenshot.png" /></div> -->
 
 
 ## Apps & Tools
