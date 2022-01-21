@@ -15,7 +15,7 @@
 
 - Bar                 : 
   - [bumblebee-status](https://github.com/tobi-wan-kenobi/bumblebee-status)
-- Editor              : Vim / Neovim (see LunarVim/Neovim-from-scratch) 
+- Editor              : Vim / Neovim (see [LunarVim/Neovim-from-scratch](https://github.com/LunarVim/Neovim-from-scratch)) 
 - Launcher            : [rofi]( https://github.com/DaveDavenport/rofi) [THEMES!](https://github.com/sheepla/rofi-themes) 
 - Notification Daemon : [dunst](https://dunst-project.org/)
 - Screenshot Tool     : [flameshot](https://github.com/flameshot-org/flameshot)
