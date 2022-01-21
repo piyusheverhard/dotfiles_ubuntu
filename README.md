@@ -34,7 +34,7 @@
     - [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) `papirus-icon-theme`
 
 - Fonts     : 
-    - [FiraCode](https://github.com/tonsky/FiraCode) 
+    - [FiraCode](https://github.com/tonsky/FiraCode) [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack)
 
 ## Color Theme
 
