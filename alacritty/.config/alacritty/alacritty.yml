@@ -109,7 +109,7 @@ colors:
   # Change cursor colors
   cursor:
     text: "#3B4252"
-    cursor: "#ECEFF4"
+    cursor: "#3B4252"
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
@@ -212,7 +212,7 @@ cursor:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    shape: Underline
+    shape: Block
 
     # Cursor blinking state
     #
@@ -221,7 +221,7 @@ cursor:
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    blinking: on
+    blinking: off
 
   # Vi mode cursor style
   #
@@ -240,20 +240,20 @@ cursor:
 
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
-  thickness: 0.25
+  thickness: 0.1
 
 font:
   normal:
-    family: "FiraCode"
+    family: "Hack"
     style: Regular
   bold:
-    family: "FiraCode"
+    family: "Hack"
     style: Bold
   italic:
-    family: "FiraCode"
+    family: "Hack"
     style: Italic
   bold_italic:
-    family: "FiraCode"
+    family: "Hack"
     style: Bold Italic
   # Point size
   size: 10
