@@ -109,7 +109,7 @@ colors:
   # Change cursor colors
   cursor:
     text: "#3B4252"
-    cursor: "#3B4252"
+    cursor: "#300000"
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
