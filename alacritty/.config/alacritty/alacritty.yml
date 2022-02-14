@@ -201,7 +201,7 @@ colors:
 #    cyan: "#89b8c2"
 #    white: "#abb0c9"
 
-background_opacity: 0.9
+background_opacity: 0.85
 
 cursor:
   # Cursor style
