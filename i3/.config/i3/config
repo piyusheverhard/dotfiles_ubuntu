@@ -328,6 +328,7 @@ for_window [class="Nitrogen"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="vlc"] floating enable
 for_window [class="Eog"] floating enable
+for_window [class="PCSX2"] floating enable
 
 #tap to touch
 exec xinput set-prop 11 290 1
@@ -337,20 +338,17 @@ bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness screen brightness controls
 
 #set wallpaper
-exec feh --bg-scale ~/wallpapers/sunset-horizon-scenery-landscape-art-uhdpaper.com-4K-178.jpg
-
+exec feh --bg-scale ~/wallpapers/1099445.png
 
 #Autostart applications
 exec --no-startup-id compton
 exec --no-startup-id flameshot
 
 # i3lock
-set $i3lockwall i3lock -i ~/wallpapers/673189.png
+set $i3lockwall i3lock -i ~/wallpapers/Webp.net-resizeimage.png
 set $buckle sh ~/.config/i3/scripts/buckle.sh
 bindsym $mod+shift+x exec --no-startup-id $i3lockwall
 bindsym $mod+ctrl+b exec --no-startup-id $buckle
 
 # night mode : redshift
 # use redshift-gtk instead of redshift
-#
-
