@@ -308,6 +308,7 @@ assign [class="Alacritty"] → $ws1
 assign [class="Brave-browser"] → $ws2
 assign [class="Microsoft Teams - Preview"] → $ws3
 assign [class="Rhythmbox"] → $ws4
+assign [class="spotify"] → $ws4
 
 #custom app commands (?i) just means case insenitive..
 for_window [class="(?i)feh"] floating enable
@@ -329,7 +330,6 @@ for_window [class="mpv"] floating enable
 for_window [class="vlc"] floating enable
 for_window [class="Eog"] floating enable
 for_window [class="PCSX2"] floating enable
-for_window [class="Protonvpn"] floating enable
 
 #tap to touch
 exec xinput set-prop 11 290 1
@@ -339,7 +339,7 @@ bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness screen brightness controls
 
 #set wallpaper
-exec feh --bg-scale ~/wallpapers/1099445.png
+exec feh --bg-scale ~/wallpapers/minimalist-desktop-15.jpg
 
 #Autostart applications
 exec --no-startup-id compton
