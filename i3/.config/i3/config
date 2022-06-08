@@ -332,14 +332,16 @@ for_window [class="Eog"] floating enable
 for_window [class="PCSX2"] floating enable
 
 #tap to touch
-exec xinput set-prop 11 290 1
+exec xinput set-prop 11 292 1
+#natural scrolling
+exec xinput set-prop 11 300 1
 
 #screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness screen brightness controls
 
 #set wallpaper
-exec feh --bg-scale ~/wallpapers/minimalist-desktop-15.jpg
+exec feh --bg-scale ~/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg
 
 #Autostart applications
 exec --no-startup-id compton
