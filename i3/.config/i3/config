@@ -39,11 +39,11 @@ set $gray    "#818596"
 
 # Window
 # <class>               <border> <background> <foreground> <indicator> <child_border>
-client.focused          $bg2     $bg3         $fg          $gray       $blue
-client.focused_inactive $bg2     $bg          $gray        $gray       $bg2
-client.unfocused        $bg2     $bg          $gray        $gray       $bg2
-client.urgent           $bg2     $red         $bg          $gray       $bg2
-client.placeholder      $bg2     $green       $bg          $gray       $bg2
+client.focused          $red     $red         $red         $red       $green
+client.focused_inactive $red     $red         $red         $red       $red
+client.unfocused        $red     $red         $red         $red       $red
+client.urgent           $red     $red         $red         $red       $bg2
+client.placeholder      $red     $red         $red         $red       $bg2
 client.background $bg
 title_align center
 
