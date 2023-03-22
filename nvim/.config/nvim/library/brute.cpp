@@ -1,23 +1,23 @@
+// time-limit: 3000
 #ifdef _genjutsu
 #include "Sharingan.h"
 #else
 #include <bits/stdc++.h>
-#define deb(x)
+#define deb(x) 
 using namespace std;
 #endif
-#define nline '\n'
+#define int long long
 #define all(x) x.begin(), x.end()
-#define rall(x) x.rebgin(), x.rend()
+#define rall(x) x.rbegin(), x.rend()
+#define nline '\n'
 /*---------------------------------------------------------------------*/
 
-void SHIT_HERE_WE_GO_AGAIN() {
-}
+void SHIT_HERE_WE_GO_AGAIN() {}
 
-int main() {
+int32_t main() {
   ios_base::sync_with_stdio(false);
   cin.tie(0);
   int t = 1;
-  cin >> t;
   for (int i = 1; i <= t; i++) {
     SHIT_HERE_WE_GO_AGAIN();
   }

@@ -61,8 +61,6 @@ return packer.startup(function(use)
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	use("lunarvim/darkplus.nvim")
-	use("joshdick/onedark.vim") -- onedark theme
-	use("morhetz/gruvbox") -- gruvbox-community theme
 	use("xiyaowong/nvim-transparent")
 
 	-- cmp plugins
@@ -92,7 +90,6 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	})
 	use("JoosepAlviste/nvim-ts-context-commentstring")
-
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 	use("tpope/vim-fugitive")
