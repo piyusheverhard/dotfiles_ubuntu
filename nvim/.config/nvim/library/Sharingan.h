@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define deb(x) cerr << #x << ": ", _print(x), cerr << nline
+#define deb(x) cerr << #x << ": ", _print(x), cerr << endl
 
 inline void _print(int x) { cerr << x; }
 inline void _print(long long x) { cerr << x; }
