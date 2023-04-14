@@ -8,7 +8,7 @@ using namespace std;
 #define int long long
 #define nline '\n'
 #define all(x) x.begin(), x.end()
-#define rall(x) x.rebgin(), x.rend()
+#define rall(x) x.rbegin(), x.rend()
 /*---------------------------------------------------------------------*/
 
 void SHIT_HERE_WE_GO_AGAIN() {
