@@ -245,16 +245,16 @@ cursor:
 
 font:
   normal:
-    family: "firacode nerd font"
+    family: "Hack"
     style: regular
   bold:
-    family: "firacode nerd font" 
+    family: "Hack" 
     style: bold
   italic:
-    family: "firacode nerd font" 
+    family: "Hack" 
     style: italic
   bold_italic:
-    family: "firacode nerd font" 
+    family: "Hack" 
     style: bold italic
   # point size
   size: 9.5
