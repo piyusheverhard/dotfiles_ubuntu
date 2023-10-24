@@ -1,65 +1,310 @@
 {
+  "Starter Template": {
+    "prefix": "st",
+    "body": [
+      "#include <iostream>",
+      "",
+      "int main (int argc, char *argv[]) {",
+      "\t$1",
+      "",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "Standard starter template for a tiny C++ program"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (${1:size_t} ${2:i} = ${3:0}; $2 < ${4:length}; $2++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Code snippet for 'for' loop"
+  },
+  "forr": {
+    "prefix": "forr",
+    "body": [
+      "for (${1:size_t} ${2:i} = ${3:length} - 1; $2 >= ${4:0}; $2--) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Code snippet for reverse 'for' loop"
+  },
+  "do": {
+    "prefix": "do",
+    "body": ["do {", "\t$0", "} while($1);"],
+    "description": "Code snippet for do...while loop"
+  },
+  "while": {
+    "prefix": "while",
+    "body": ["while ($1) {", "\t$2", "}"],
+    "description": ""
+  },
+  "foreach": {
+    "prefix": "foreach",
+    "body": [
+      "for(${1:auto} ${2:var} : ${3:collection_to_loop}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Code snippet for range-based for loop (c++11) statement"
+  },
+  "if": {
+    "prefix": "if",
+    "body": ["if ($1) {", "\t$0", "}"],
+    "description": "Code snippet for if statement"
+  },
+  "else": {
+    "prefix": "else",
+    "body": ["else {", "\t$0", "}"],
+    "description": "Code snippet for else statement"
+  },
+  "else if": {
+    "prefix": "else if",
+    "body": ["else if ($1) {", "\t$0", "}"],
+    "description": "Code snippet for else-if statement"
+  },
+  "enum": {
+    "prefix": "enum",
+    "body": ["enum ${1:MyEnum} {", "\t$0", "};"],
+    "description": "Code snippet for enum"
+  },
+  "enum class": {
+    "prefix": "enum class",
+    "body": ["enum class ${1:MyClass} {$0};"],
+    "description": "Code snippet for enum class (c++11)"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:MyClass} {",
+      "public:",
+      "\t$1();",
+      "\t$1($1 &&) = default;",
+      "\t$1(const $1 &) = default;",
+      "\t$1 &operator=($1 &&) = default;",
+      "\t$1 &operator=(const $1 &) = default;",
+      "\t~$1();",
+      "",
+      "private:",
+      "\t$2",
+      "};",
+      "",
+      "$1::$1() {",
+      "}",
+      "",
+      "$1::~$1() {",
+      "}"
+    ],
+    "description": "Code snippet for class"
+  },
+  "eclass": {
+    "prefix": "eclass",
+    "body": [
+      "class ${1:MyClass} {",
+      "public:",
+      "\t$2",
+      "private:",
+      "\t$3",
+      "};",
+      ""
+    ],
+    "description": "Code snippet for empty class"
+  },
+  "qclass": {
+    "prefix": "qclass",
+    "body": [
+      "class ${1:MyClass} : public QObject {",
+      "\tQ_OBJECT;",
+      "public:",
+      "\nexplicit $1(QObject *parent = nullptr);",
+      "\t$2",
+      "signals:",
+      "",
+      "public slots:",
+      "};",
+      ""
+    ],
+    "description": "Code snippet for empty Qt class"
+  },
+  "classi": {
+    "prefix": "classi",
+    "body": [
+      "class ${1:MyClass} {",
+      "public:",
+      "\t$1() = default;",
+      "\t$1($1 &&) = default;",
+      "\t$1(const $1 &) = default;",
+      "\t$1 &operator=($1 &&) = default;",
+      "\t$1 &operator=(const $1 &) = default;",
+      "\t~$1() = default;",
+      "",
+      "private:",
+      "\t$2",
+      "};"
+    ],
+    "description": "Code snippet for class with inline constructor/destructor"
+  },
+  "interface": {
+    "prefix": "interface",
+    "body": ["__interface I${1:Interface} {", "\t$0", "};"],
+    "description": "Code snippet for interface (Visual C++)"
+  },
+  "namespace": {
+    "prefix": "namespace",
+    "body": ["namespace ${1:MyNamespace} {", "\t$0", "}"]
+  },
+  "#ifdef": {
+    "prefix": "#ifdef",
+    "body": ["#ifdef ${1:DEBUG}", "$0", "#endif // ${DEBUG}"],
+    "description": "Code snippet for #ifdef"
+  },
+  "#ifndef": {
+    "prefix": "#ifndef",
+    "body": ["#ifndef ${1:DEBUG}", "$0", "#endif // !$1"],
+    "description": "Code snippet for #ifndef"
+  },
+  "#if": {
+    "prefix": "#if",
+    "body": ["#if ${1:0}", "$0", "#endif // $1"],
+    "description": "Code snippet for #if"
+  },
+  "struct": {
+    "prefix": "struct",
+    "body": ["struct ${1:MyStruct} {", "\t$0", "};"],
+    "description": "Code snippet for struct"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:switch_on}) {",
+      "\tdefault:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "Code snippet for switch statement"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t",
+      "}",
+      "catch (const std::exception&) {",
+      "\t$1",
+      "}"
+    ],
+    "description": "Code snippet for try catch"
+  },
+  "union": {
+    "prefix": "union",
+    "body": ["union ${1:MyUnion} {", "\t$0", "};"],
+    "description": "Code snippet for union"
+  },
+  "cout": {
+    "prefix": "cout",
+    "body": ["std::cout << \"${1:message}\" << std::endl;"],
+    "description": "Code snippet for printing to std::cout, provided the header is set"
+  },
+  "cin": {
+    "prefix": "cin",
+    "body": ["std::cin >> $1;"],
+    "description": "Code snippet for std::cin, provided the header is set"
+  },
+  "printf": {
+    "prefix": "printf",
+    "body": ["printf(\"$1\\n\"$0);"],
+    "description": "Generic printf() snippet"
+  },
+  "sprintf": {
+    "prefix": "sprintf",
+    "body": ["sprintf($1, \"$2\\n\"$0);"],
+    "description": "Generic sprintf() snippet"
+  },
+  "fprintf": {
+    "prefix": "fprintf",
+    "body": ["fprintf(${1:stderr}, \"$2\\n\"$0);"],
+    "description": "Generic fprintf() snippet"
+  },
+  "scanf": {
+    "prefix": "scanf",
+    "body": ["scanf(\"$1\"$0);"],
+    "description": "Generic scanf() snippet"
+  },
+  "sscanf": {
+    "prefix": "sscanf",
+    "body": ["sscanf($1, \"$2\"$0);"],
+    "description": "Generic sscanf() snippet"
+  },
+  "fscanf": {
+    "prefix": "fscanf",
+    "body": ["fscanf($1, \"$2\"$0);"],
+    "description": "Generic fscanf() snippet"
+  },
+  "#inc": {
+    "prefix": "#inc",
+    "body": ["#include \"$0\""],
+    "description": "Code snippet for #include \" \""
+  },
+  "#inc<": {
+    "prefix": "#inc<",
+    "body": ["#include <$0>"],
+    "description": "Code snippet for #include < >"
+  },
+  "#def": {
+    "prefix": "def",
+    "body": ["#define $0"],
+    "description": "Code snippet for #define \" \""
+  },
+  "Main function template": {
+    "prefix": "main",
+    "body": ["int main (int argc, char *argv[]) {", "\t$1", "\treturn 0;", "}"],
+    "description": "A standard main function for a C++ program"
+  },
   "vi": {
     "prefix": "vector<int>",
-    "body": [
-      "vector<int> "
-    ]
+    "body": ["vector<int> "]
   },
   "ll": {
     "prefix": "long long",
-    "body": [
-      "long long "
-    ]
+    "body": ["long long "]
   },
   "vll": {
     "prefix": "vector<long long>",
-    "body": [
-      "vector<long long> "
-    ]
+    "body": ["vector<long long> "]
   },
   "pii": {
     "prefix": "pii",
-    "body": [
-      "pair<int, int> "
-    ]
+    "body": ["pair<int, int> "]
   },
   "pll": {
     "prefix": "pll",
-    "body": [
-      "pair<long, long> "
-    ]
+    "body": ["pair<long, long> "]
   },
   "vvi": {
     "prefix": "vvi",
-    "body": [
-      "vector<vector<int>> "
-    ]
+    "body": ["vector<vector<int>> "]
   },
   "vvl": {
     "prefix": "vvl",
-    "body": [
-      "vector<vector<long long>> "
-    ]
+    "body": ["vector<vector<long long>> "]
   },
   "vpii": {
     "prefix": "vpii",
-    "body": [
-      "vector<pair<int, int>> "
-    ]
+    "body": ["vector<pair<int, int>> "]
   },
   "vpll": {
     "prefix": "vpll",
-    "body": [
-      "vector<pair<long, long>> "
-    ]
+    "body": ["vector<pair<long, long>> "]
   },
-  "pbds": {
+  "Ordered Set": {
     "prefix": "ordered set",
     "body": [
       "#include <ext/pb_ds/assoc_container.hpp>",
       "#include <ext/pb_ds/tree_policy.hpp>",
       "using namespace __gnu_pbds;",
-      "typedef tree<pii, null_type, less<pii>, rb_tree_tag, tree_order_statistics_node_update> oset; // ordered_set",
+      "typedef tree<int, null_type, less<>, rb_tree_tag, tree_order_statistics_node_update> oset; // ordered_set",
       "// member functions :",
       "// 1. order_of_key(k) : number of elements strictly lesser than k.",
       "// 2. find_by_order(k) : k-th element in the oset.",
@@ -234,5 +479,60 @@
       "};",
       ""
     ]
+  },
+  "Segment Tree": {
+    "prefix": "Segment Tree",
+    "body": [
+      "template <typename T, class F = function<T(const T &, const T &)>>",
+      "class SegmentTree {",
+      "private:",
+      "  const T _default;",
+      "  F op;",
+      "  int n, size;",
+      "  vector<T> tree;",
+      "",
+      "  T range_query(int node, int qlow, int qhigh, int low, int high) {",
+      "    if (qlow > high || qhigh < low) {",
+      "      return _default;",
+      "    }",
+      "    if (low >= qlow && high <= qhigh) {",
+      "      return tree[node];",
+      "    }",
+      "    int mid = (low + high) / 2;",
+      "    return op(range_query(2 * node, qlow, qhigh, low, mid),",
+      "              range_query(2 * node + 1, qlow, qhigh, mid + 1, high));",
+      "  }",
+      "",
+      "public:",
+      "  SegmentTree(const vector<T> &arr, T _def, F _op) : _default(_def), op(_op) {",
+      "    n = size = arr.size();",
+      "    while (size & (size - 1)) {",
+      "      ++size;",
+      "    }",
+      "    tree.resize(2 * size);",
+      "    for (int i = 0; i < n; i++) {",
+      "      tree[size + i] = arr[i];",
+      "    }",
+      "    for (int i = size - 1; i > 0; i--) {",
+      "      tree[i] = op(tree[2 * i], tree[2 * i + 1]);",
+      "    }",
+      "  }",
+      "",
+      "  void point_update(int index, T value) {",
+      "    int idx = size + index;",
+      "    tree[idx] = value;",
+      "    idx >>= 1;",
+      "    while (idx) {",
+      "      tree[idx] = op(tree[2 * idx], tree[2 * idx + 1]);",
+      "      idx >>= 1;",
+      "    }",
+      "  }",
+      "",
+      "  T range_query(int start, int end) {",
+      "    return range_query(1, start, end, 0, size - 1);",
+      "  }",
+      "};"
+    ],
+    "description": "Segment Tree with point update and range query"
   }
 }
