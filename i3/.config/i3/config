@@ -333,9 +333,9 @@ for_window [class="Eog"] floating enable
 for_window [class="PCSX2"] floating enable
 
 #tap to touch
-exec_always xinput set-prop 11 290 1
+exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 #natural scrollin
-exec_always xinput set-prop 11 298 1
+exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
 #screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
